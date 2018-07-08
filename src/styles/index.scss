@@ -19,8 +19,19 @@ body {
 }
 
 .banner {
-    img.banner-image {
-        width: 100%;
-        height: auto;
+    background: url('../assets/png/banner.png') no-repeat center center;
+    background-size: cover;
+    min-height: 605px;
+    color: white;
+    .banner-text {
+        margin-top: 130px;
+        h1 {
+            display: inline-block;
+            margin: 15px 20px;
+        }
+        h3{
+            display: inline-block;
+            margin: 10px 20px;
+        }
     }
 }

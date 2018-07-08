@@ -63,6 +63,16 @@ body {
   padding: 0;
   font-family: 'Josefin Sans'; }
 
-.banner img.banner-image {
-  width: 100%;
-  height: auto; }
+.banner {
+  background: url("../assets/png/banner.png") no-repeat center center;
+  background-size: cover;
+  min-height: 605px;
+  color: white; }
+  .banner .banner-text {
+    margin-top: 130px; }
+    .banner .banner-text h1 {
+      display: inline-block;
+      margin: 15px 20px; }
+    .banner .banner-text h3 {
+      display: inline-block;
+      margin: 10px 20px; }
