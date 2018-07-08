@@ -1,0 +1,17 @@
+.header {
+    padding: 15px 40px 12px;
+    .brand-name{
+        position: relative;
+        font-size: 30px;
+        display: inline-block;
+    }
+    .button-group{
+        position: relative;
+        display: inline-block;
+        float: right;
+        right: 2vw;
+        button {
+            margin: 3px 5px;
+        }
+    }
+}

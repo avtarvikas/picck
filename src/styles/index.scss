@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700i');
+@import './generic.scss';
+@import './header.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans';
+}
