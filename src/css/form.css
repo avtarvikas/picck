@@ -1,0 +1,20 @@
+.button {
+  border: 0;
+  background: transparent;
+  border-radius: 4px;
+  outline: none;
+  padding: 6px 20px 4px; }
+  .button.blue {
+    color: #4258f4;
+    border-color: #4258f4; }
+  .button.yellow {
+    color: #fbbc05;
+    border-color: #fbbc05; }
+  .button.bg-blue {
+    color: white;
+    background-color: #4258f4;
+    border-color: #4258f4; }
+  .button.bg-yellow {
+    color: white;
+    background-color: #fbbc05;
+    border-color: #fbbc05; }
