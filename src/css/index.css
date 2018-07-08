@@ -37,7 +37,6 @@
     .header .button-group button {
       margin: 3px 5px; }
 
-<<<<<<< HEAD
 footer {
   background-color: #4285f4;
   color: #ffffff; }
@@ -52,7 +51,7 @@ footer {
     footer .footer-right h1 {
       font-weight: bolder;
       font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
-=======
+
 .button {
   border: 0;
   background: transparent;
@@ -73,13 +72,22 @@ footer {
     color: white;
     background-color: #fbbc05;
     border-color: #fbbc05; }
->>>>>>> baeb37098de6919f4b6db042f073e529cb662564
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans'; }
 
-.banner img.banner-image {
-  width: 100%;
-  height: auto; }
+.banner {
+  background: url("../assets/png/banner.png") no-repeat center center;
+  background-size: cover;
+  min-height: 605px;
+  color: white; }
+  .banner .banner-text {
+    margin-top: 130px; }
+    .banner .banner-text h1 {
+      display: inline-block;
+      margin: 15px 20px; }
+    .banner .banner-text h3 {
+      display: inline-block;
+      margin: 10px 20px; }
