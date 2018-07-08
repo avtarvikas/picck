@@ -1,0 +1,27 @@
+@import './vars.scss';
+
+.button {
+    border: 0;
+    background: transparent;
+    border-radius: 4px;
+    outline: none;
+    padding: 6px 20px 4px;
+    &.blue {
+        color: $color-blue;
+        border-color: $color-blue;
+    }
+    &.yellow {
+        color: $color-yellow;
+        border-color: $color-yellow;
+    }
+    &.bg-blue {
+        color: white;
+        background-color: $color-blue;
+        border-color: $color-blue;
+    }
+    &.bg-yellow {
+        color: white;
+        background-color: $color-yellow;
+        border-color: $color-yellow;
+    }
+}

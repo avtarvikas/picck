@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import logo from '../../../assets/svg/logo.svg';
 import Header from '../../../common/components/Header';
 import Footer from '../../../common/components/Footer';
+import Banner from '../component/Banner';
 
 class Home extends Component {
   render() {
     return (
       <div className="container-fluid App">
         <Header />
+        <Banner />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>

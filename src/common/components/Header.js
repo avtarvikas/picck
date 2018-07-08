@@ -15,9 +15,9 @@ class Header extends Component {
                                 <span className='text-red'>k</span>
                             </div>
                             <div className='button-group'>
-                                <Button disabled={true} value='Button 1' />
-                                <Button disabled={true} value='Button 2' />
-                                <Button disabled={true} value='Button 3' />
+                                <Button disabled={false} value='Button 1' className='bg-blue' />
+                                <Button disabled={false} value='Button 2' className='bg-yellow' />
+                                <Button disabled={false} value='Button 3' className='bg-blue' />
                             </div>
                         </div>
                     </div>
