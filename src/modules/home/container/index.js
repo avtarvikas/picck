@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../../../assets/svg/logo.svg';
 import Header from '../../../common/components/Header';
+import Footer from '../../../common/components/Footer';
 
 class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ class Home extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Footer />
       </div>
     );
   }

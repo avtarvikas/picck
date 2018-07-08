@@ -37,6 +37,21 @@
     .header .button-group button {
       margin: 3px 5px; }
 
+footer {
+  background-color: #4285f4;
+  color: #ffffff; }
+  footer .row {
+    padding: 4em 0; }
+  footer .col-2 a {
+    color: #ffffff;
+    line-height: 2rem; }
+  footer .footer-right {
+    display: table;
+    margin: 0 auto; }
+    footer .footer-right h1 {
+      font-weight: bolder;
+      font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
+
 body {
   margin: 0;
   padding: 0;
