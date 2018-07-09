@@ -12,27 +12,10 @@
 @import './header.scss';
 @import './footer.scss';
 @import './form.scss';
+@import './home.scss';
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans';
-}
-
-.banner {
-    background: url('../assets/png/banner.png') no-repeat center center;
-    background-size: cover;
-    min-height: 605px;
-    color: white;
-    .banner-text {
-        margin-top: 130px;
-        h1 {
-            display: inline-block;
-            margin: 15px 20px;
-        }
-        h3{
-            display: inline-block;
-            margin: 10px 20px;
-        }
-    }
 }

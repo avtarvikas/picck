@@ -1,0 +1,49 @@
+.banner {
+  background: url("../assets/png/banner.png") no-repeat center center;
+  background-size: cover;
+  min-height: 605px;
+  color: white;
+  .banner-text {
+    margin-top: 130px;
+    h1 {
+      display: inline-block;
+      margin: 15px 20px;
+    }
+    h3 {
+      display: inline-block;
+      margin: 10px 20px;
+    }
+  }
+}
+
+.sign-in-page {
+  .page-content {
+    margin: 40px 0px;
+
+    .sign-in-role-container {
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid #d5d5d5;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 1px 30px 5px #e1e1e1;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+
+      //   &:hover {
+      //     cursor: pointer;
+      //     box-shadow: 0px 2px 20px 6px #9abbf0;
+      //   }
+    }
+
+    .role-name {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 20px auto;
+    }
+  }
+}

@@ -73,11 +73,6 @@ footer {
     background-color: #fbbc05;
     border-color: #fbbc05; }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Josefin Sans'; }
-
 .banner {
   background: url("../assets/png/banner.png") no-repeat center center;
   background-size: cover;
@@ -91,3 +86,24 @@ body {
     .banner .banner-text h3 {
       display: inline-block;
       margin: 10px 20px; }
+
+.sign-in-page .page-content {
+  margin: 40px 0px; }
+  .sign-in-page .page-content .sign-in-role-container {
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid #d5d5d5; }
+    .sign-in-page .page-content .sign-in-role-container:hover {
+      cursor: pointer;
+      box-shadow: 0px 1px 30px 5px #e1e1e1; }
+  .sign-in-page .page-content img {
+    border-radius: 50%; }
+  .sign-in-page .page-content .role-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px auto; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans'; }
