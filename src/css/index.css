@@ -103,6 +103,38 @@ footer {
     font-weight: 500;
     margin: 20px auto; }
 
+.job-opening {
+  background: #f7f7f7;
+  padding: 20px 0px 20px 0px; }
+  .job-opening .page-content {
+    margin: 40px 0px; }
+  .job-opening .tile.row {
+    align-items: baseline;
+    padding: 15px;
+    background: #ffffff;
+    margin: 7px 0px 7px 0px; }
+    .job-opening .tile.row .location {
+      text-align: center; }
+    .job-opening .tile.row .action-button {
+      text-align: center; }
+      .job-opening .tile.row .action-button button {
+        border-radius: 23px;
+        outline: none;
+        cursor: pointer;
+        background: #ffffff;
+        border-radius: 23px;
+        border: 2px solid;
+        color: #000000; }
+  .job-opening .selected-job {
+    color: #4258f4;
+    border: 1px solid #4258f4; }
+    .job-opening .selected-job button {
+      color: #ffffff !important;
+      background: #4258f4 !important; }
+  .job-opening .tile.row:hover {
+    border: 1px solid #4258f4;
+    box-shadow: 0 0 10px #4258f4; }
+
 body {
   margin: 0;
   padding: 0;

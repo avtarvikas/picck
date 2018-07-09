@@ -9,3 +9,10 @@ export const logger = [
   { role: "Recruiter", logo: recruiter },
   { role: "Marketing", logo: marketing }
 ];
+
+export const jobOpening = [
+	{ description:'Manager Vendor Management', location:'Lahore' },
+	{ description:'Regional Head Sales - DFS', location:'Lahore' },
+	{ description:'Manager Vendor Management', location:'Islamabad' },
+	{ description:'Officer Employee Engagement', location:'Karachi' },
+]

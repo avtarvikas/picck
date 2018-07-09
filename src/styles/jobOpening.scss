@@ -1,0 +1,43 @@
+@import './vars.scss';
+
+.job-opening {
+  background:#f7f7f7;
+  padding: 20px 0px 20px 0px;
+  .page-content {
+    margin: 40px 0px;
+  }
+  .tile.row{
+    align-items: baseline;
+    padding:15px;
+    background:#ffffff;
+        margin: 7px 0px 7px 0px;
+    .location{
+      text-align:center;
+    }
+    .action-button{
+      text-align:center;
+      button{
+        border-radius:23px;
+        outline:none;
+        cursor:pointer;
+        background:#ffffff;
+        border-radius:23px;
+        border:2px solid;
+        color:#000000;
+      }
+    }
+  }
+  .selected-job{
+    color: $color-blue;
+    border: 1px solid $color-blue;
+    button{
+      color:#ffffff !important;
+      background:$color-blue !important;
+    }
+  }
+
+  .tile.row:hover{
+    border: 1px solid $color-blue;
+    box-shadow: 0 0 10px $color-blue;
+  }
+}
