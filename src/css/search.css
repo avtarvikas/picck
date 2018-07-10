@@ -56,11 +56,15 @@
   box-sizing: border-box; }
 
 .search-container .search-btn {
-  background-color: #0caa41;
+  background-color: #4285f4;
   border: 0;
   border-radius: 0 2px 2px 0;
   width: 60px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
+  .search-container .search-btn i {
+    font-size: 20px;
+    color: white; }
 
 .search-container .arrow {
   position: absolute;
