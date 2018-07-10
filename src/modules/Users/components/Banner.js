@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Search from "../../../common/components/Search"
 
 class Banner extends Component {
   render() {
@@ -6,10 +7,7 @@ class Banner extends Component {
       <div className="banner row m0">
         <div className="container">
           <div className="row m0">
-            <div className="banner-text col-8">
-              <h1>Find The Career You Deserve</h1>
-              <h3>Your job search starts and ends with us.</h3>
-            </div>
+            <Search/>
           </div>
         </div>
       </div>

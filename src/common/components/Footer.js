@@ -12,7 +12,6 @@ class Footer extends Component {
   }
 
   callUpdateStore() {
-    console.log(window.innerWidth);
     this.setState({
       width: window.innerWidth
     });

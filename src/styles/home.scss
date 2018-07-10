@@ -1,7 +1,7 @@
 .banner {
-  background: url("../assets/png/banner.png") no-repeat center center;
+  background: url("../assets/png/banner2.png") no-repeat center center;
   background-size: cover;
-  min-height: 605px;
+  min-height: 500px;
   color: white;
   .banner-text {
     margin-top: 130px;
@@ -17,6 +17,7 @@
 }
 
 .sign-in-page {
+  margin: 40px 0px;
   .page-content {
     margin: 40px 0px;
 
