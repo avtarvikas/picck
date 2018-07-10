@@ -1,7 +1,7 @@
 .banner {
-  background: url("../assets/png/banner.png") no-repeat center center;
+  background: url("../assets/png/banner2.png") no-repeat center center;
   background-size: cover;
-  min-height: 605px;
+  min-height: 500px;
   color: white; }
   .banner .banner-text {
     margin-top: 130px; }
@@ -12,19 +12,21 @@
       display: inline-block;
       margin: 10px 20px; }
 
-.sign-in-page .page-content {
+.sign-in-page {
   margin: 40px 0px; }
-  .sign-in-page .page-content .sign-in-role-container {
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid #d5d5d5;
-    transition: box-shadow 0.4s ease-in-out; }
-    .sign-in-page .page-content .sign-in-role-container:hover {
-      cursor: pointer;
-      box-shadow: 0px 1px 30px 5px #e1e1e1; }
-  .sign-in-page .page-content img {
-    border-radius: 50%; }
-  .sign-in-page .page-content .role-name {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 20px auto; }
+  .sign-in-page .page-content {
+    margin: 40px 0px; }
+    .sign-in-page .page-content .sign-in-role-container {
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid #d5d5d5;
+      transition: box-shadow 0.4s ease-in-out; }
+      .sign-in-page .page-content .sign-in-role-container:hover {
+        cursor: pointer;
+        box-shadow: 0px 1px 30px 5px #e1e1e1; }
+    .sign-in-page .page-content img {
+      border-radius: 50%; }
+    .sign-in-page .page-content .role-name {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 20px auto; }
