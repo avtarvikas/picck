@@ -91,3 +91,16 @@ body {
     .banner .banner-text h3 {
       display: inline-block;
       margin: 10px 20px; }
+
+.hiring {
+  text-align: right;
+  margin: 5em; }
+  .hiring .col-4 {
+    padding: 2.5em;
+    border-bottom: 2px solid transparent; }
+  .hiring .col-4:hover {
+    box-shadow: 1px 5px 20px 5px #ccc;
+    cursor: pointer;
+    border-bottom: 3px solid #00bfff; }
+  .hiring .col-4:hover h3 {
+    color: #00bfff; }

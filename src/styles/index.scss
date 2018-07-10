@@ -36,3 +36,19 @@ body {
         }
     }
 }
+.hiring {
+    text-align: right;
+    margin: 5em;
+    .col-4 {
+        padding: 2.5em;
+        border-bottom: 2px solid transparent;
+    }
+    .col-4:hover {
+        box-shadow: 1px 5px 20px 5px #ccc;
+        cursor: pointer;
+        border-bottom: 3px solid #00bfff;
+    }
+    .col-4:hover h3 {
+        color: #00bfff;
+    }
+}
