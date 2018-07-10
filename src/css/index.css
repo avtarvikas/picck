@@ -15,7 +15,7 @@
   color: #34a853; }
 
 .text-blue {
-  color: #4258f4; }
+  color: #4285f4; }
 
 .text-yellow {
   color: #fbbc05; }
@@ -24,10 +24,10 @@
   color: #f2f2f2; }
 
 .header {
-  padding: 15px 40px 12px; }
+  padding-left: 20px; }
   .header .brand-name {
     position: relative;
-    font-size: 30px;
+    font-size: 35px;
     display: inline-block; }
   .header .button-group {
     position: relative;
@@ -52,6 +52,24 @@ footer {
       font-weight: bolder;
       font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
 
+.footer-mobile {
+  background-color: #4285f4;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 0px; }
+  .footer-mobile .container {
+    text-align: center; }
+    .footer-mobile .container .pickk-contact-footer {
+      margin: auto; }
+    .footer-mobile .container .footer-right {
+      text-align: left; }
+    .footer-mobile .container .footer-bottom-section {
+      margin: 20px 0px;
+      text-decoration: underline; }
+      .footer-mobile .container .footer-bottom-section span {
+        margin: 10px;
+        cursor: pointer; }
+
 .button {
   border: 0;
   background: transparent;
@@ -59,15 +77,15 @@ footer {
   outline: none;
   padding: 6px 20px 4px; }
   .button.blue {
-    color: #4258f4;
-    border-color: #4258f4; }
+    color: #4285f4;
+    border-color: #4285f4; }
   .button.yellow {
     color: #fbbc05;
     border-color: #fbbc05; }
   .button.bg-blue {
     color: white;
-    background-color: #4258f4;
-    border-color: #4258f4; }
+    background-color: #4285f4;
+    border-color: #4285f4; }
   .button.bg-yellow {
     color: white;
     background-color: #fbbc05;
@@ -92,7 +110,8 @@ footer {
   .sign-in-page .page-content .sign-in-role-container {
     text-align: center;
     padding-top: 20px;
-    border: 1px solid #d5d5d5; }
+    border: 1px solid #d5d5d5;
+    transition: box-shadow 0.4s ease-in-out; }
     .sign-in-page .page-content .sign-in-role-container:hover {
       cursor: pointer;
       box-shadow: 0px 1px 30px 5px #e1e1e1; }
@@ -106,15 +125,33 @@ footer {
 .job-opening {
   background: #f7f7f7;
   padding: 20px 0px 20px 0px; }
+  .job-opening .page-header {
+    margin: 15px 0px; }
   .job-opening .page-content {
     margin: 40px 0px; }
   .job-opening .tile.row {
     align-items: baseline;
     padding: 15px;
+    color: #262626;
     background: #ffffff;
-    margin: 7px 0px 7px 0px; }
+    margin: 7px 0px;
+    border: 1px solid #FFF; }
+    @media screen and (max-width: 575px) {
+      .job-opening .tile.row .description {
+        text-align: center; } }
+    .job-opening .tile.row:hover {
+      border: 1px solid #4285f4; }
+      .job-opening .tile.row:hover .action-button button {
+        border: 2px solid #1c53ad;
+        background: #1c53ad;
+        color: #fff;
+        box-shadow: 4px 4px 10px 0px #4285f4; }
+      .job-opening .tile.row:hover .description,
+      .job-opening .tile.row:hover .location {
+        color: #4285f4; }
     .job-opening .tile.row .location {
-      text-align: center; }
+      text-align: center;
+      color: #838686; }
     .job-opening .tile.row .action-button {
       text-align: center; }
       .job-opening .tile.row .action-button button {
@@ -122,20 +159,27 @@ footer {
         outline: none;
         cursor: pointer;
         background: #ffffff;
-        border-radius: 23px;
-        border: 2px solid;
-        color: #000000; }
-  .job-opening .selected-job {
-    color: #4258f4;
-    border: 1px solid #4258f4; }
-    .job-opening .selected-job button {
-      color: #ffffff !important;
-      background: #4258f4 !important; }
-  .job-opening .tile.row:hover {
-    border: 1px solid #4258f4;
-    box-shadow: 0 0 10px #4258f4; }
+        border: 2px solid #262626;
+        color: #262626; }
 
 body {
-  margin: 0;
+  font-family: "Josefin Sans";
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 0;
-  font-family: 'Josefin Sans'; }
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.m0 {
+  margin: 0px !important; }
+
+.p0 {
+  padding: 0px !important; }
+
+.p-10 {
+  padding: 10px; }
+
+.m-10 {
+  margin: 10px; }

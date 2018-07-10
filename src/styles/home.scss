@@ -24,6 +24,7 @@
       text-align: center;
       padding-top: 20px;
       border: 1px solid #d5d5d5;
+      transition: box-shadow 0.4s ease-in-out;
 
       &:hover {
         cursor: pointer;
