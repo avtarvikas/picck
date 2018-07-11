@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Button from "./form/button";
 
 class Footer extends Component {
   static MOBILE_BREAK_POINT = 1230;
@@ -50,40 +49,40 @@ class Footer extends Component {
           <div className="row m0">
             <div className="col-2 picck-footer">
               <h5>Picck</h5>
-              <a href="#">About Us</a>
+              <a href="">About Us</a>
               <br />
-              <a href="#">Awards & Trends</a>
+              <a href="">Awards & Trends</a>
               <br />
-              <a href="#">Blog</a>
+              <a href="">Blog</a>
             </div>
             <div className="col-2 employers">
               <h5>Employers</h5>
-              <a href="#">Get a FREE Employer Account</a>
+              <a href="">Get a FREE Employer Account</a>
               <br />
-              <a href="#">Employer Center</a>
+              <a href="">Employer Center</a>
               <br />
-              <a href="#">Post a Job</a>
+              <a href="">Post a Job</a>
               <br />
             </div>
             <div className="col-2 community">
               <h5>Community</h5>
-              <a href="#">Help/Contact Us</a>
+              <a href="">Help/Contact Us</a>
               <br />
-              <a href="#">Guidelines</a>
+              <a href="">Guidelines</a>
               <br />
-              <a href="#">Terms of Use (New)</a>
+              <a href="">Terms of Use (New)</a>
               <br />
-              <a href="#">Privacy & Cookies (New)</a>
+              <a href="">Privacy & Cookies (New)</a>
             </div>
             <div className="col-2 wok-with-us">
               <h5>Work With Us</h5>
-              <a href="#">Job Boards</a>
+              <a href="">Job Boards</a>
               <br />
-              <a href="#">Advertisers</a>
+              <a href="">Advertisers</a>
               <br />
-              <a href="#">Developers</a>
+              <a href="">Developers</a>
               <br />
-              <a href="#">Careers</a>
+              <a href="">Careers</a>
             </div>
             <div className="col-md-4 col-sm-6 pickk-contact-footer">
               <div className="footer-right">

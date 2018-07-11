@@ -27,15 +27,75 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.m0{
-    margin: 0px !important;
+
+@media screen and (max-width: 767px) {
+  body {
+    text-align: center;
+    .hiring{
+      text-align: center;
+
+      .steps{
+        padding: 1em 2.5em;
+      }
+    }
+  }
 }
-.p0{
-    padding: 0px !important;
+
+h1 {
+  font-size: 28px;
 }
-.p-10{
-    padding: 10px;
+
+.section {
+  padding: 40px 0px;
+  margin: auto;
 }
-.m-10{
-    margin: 10px;
+
+.banner {
+  background: url("../assets/png/banner.png") no-repeat center center;
+  background-size: cover;
+  min-height: 605px;
+  color: white;
+  .banner-text {
+    margin-top: 130px;
+    h1 {
+      display: inline-block;
+      margin: 15px 20px;
+    }
+    h3 {
+      display: inline-block;
+      margin: 10px 20px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
+}
+.hiring {
+  text-align: right;
+  .steps {
+    padding: 2.5em;
+    border-bottom: 2px solid transparent;
+  }
+  .steps:hover {
+    box-shadow: 1px 5px 20px 5px #ccc;
+    cursor: pointer;
+    border-bottom: 3px solid #00bfff;
+  }
+  .steps:hover h3 {
+    color: #00bfff;
+  }
+}
+.m0 {
+  margin: 0px !important;
+}
+.p0 {
+  padding: 0px !important;
+}
+.p-10 {
+  padding: 10px;
+}
+.m-10 {
+  margin: 10px;
 }

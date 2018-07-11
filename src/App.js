@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
-import HomePage from './modules/Users/containers/HomePage';
+import React, { Component } from "react";
+import DeviceUtil from "./common/Util/DeviceUtil";
 
 class App extends Component {
   render() {
     return (
-      <HomePage />
+      <div>
+        <DeviceUtil>{this.props.children}</DeviceUtil>
+      </div>
     );
   }
 }
