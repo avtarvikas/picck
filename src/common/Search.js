@@ -20,10 +20,10 @@ class Search extends Component {
             })}>Companies</span>
             <span onClick={()=> this.setState({
                 left:"276px"
-            })}>Salaries</span>
+            })}>Learning</span>
             <span onClick={()=> this.setState({
                 left:"390px"
-            })}>Interviews</span>
+            })}>Forum</span>
             <div className="arrow" style={{ marginLeft: left }} />
           </div>
           <form className="form-group" />
