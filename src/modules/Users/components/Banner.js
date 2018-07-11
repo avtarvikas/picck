@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Search from "../../../common/components/Search"
+import Search from "../../../common/Search"
 
 class Banner extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Header from "../../../common/components/Header";
-import Footer from "../../../common/components/Footer";
+import Header from "../../../common/Header";
+import Footer from "../../../common/Footer";
 import Banner from "../components/Banner";
 import SignIn from "../components/SignIn";
 import JobOpening from "../components/JobOpening";

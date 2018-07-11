@@ -11,7 +11,7 @@ class HiringProcess extends Component {
         <div className="row m0 upper">
           {hiringProcess.map((step, i) => (
             <div className="col-md-4 steps" key={i}>
-              <img src={step.image} />
+              <img src={step.image} alt=""/>
               <h3>{step.label}</h3>
               <p>{step.description}</p>
             </div>

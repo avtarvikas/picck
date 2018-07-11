@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import UsersLogo from "../../../assets/png/user.png";
 import { logger } from "../../constants";
 
 class SignIn extends Component {
@@ -13,7 +12,7 @@ class SignIn extends Component {
           <div className="page-content row">
             {logger.map((obj, i) => (
               <div className="col-md-3 sign-in-role-container" key={i}>
-                <img src={obj.logo} width={100} height={100} />
+                <img src={obj.logo} width={100} height={100} alt=""/>
                 <div className="role-name">{obj.role}</div>
               </div>
             ))}
