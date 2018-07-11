@@ -1,54 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100i');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300i');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400i');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600i');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700i');
-@import './generic.scss';
-@import './header.scss';
-@import './footer.scss';
-@import './form.scss';
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:600i");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700i");
+@import "./vars.scss";
+@import "./generic.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./form.scss";
+@import "./home.scss";
+@import "./search.scss";
+@import "./jobOpening.scss";
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .banner {
-    background: url('../assets/png/banner.png') no-repeat center center;
-    background-size: cover;
-    min-height: 605px;
-    color: white;
-    .banner-text {
-        margin-top: 130px;
-        h1 {
-            display: inline-block;
-            margin: 15px 20px;
-        }
-        h3{
-            display: inline-block;
-            margin: 10px 20px;
-        }
+  background: url("../assets/png/banner2.png") no-repeat center center;
+  background-size: cover;
+  min-height: 605px;
+  color: white;
+  .banner-text {
+    margin-top: 130px;
+    h1 {
+      display: inline-block;
+      margin: 15px 20px;
     }
+    h3 {
+      display: inline-block;
+      margin: 10px 20px;
+    }
+  }
 }
 .hiring {
-    text-align: right;
-    margin: 5em;
-    .col-4 {
-        padding: 2.5em;
-        border-bottom: 2px solid transparent;
-    }
-    .col-4:hover {
-        box-shadow: 1px 5px 20px 5px #ccc;
-        cursor: pointer;
-        border-bottom: 3px solid #00bfff;
-    }
-    .col-4:hover h3 {
-        color: #00bfff;
-    }
+  text-align: right;
+  margin: 5em;
+  .col-4 {
+    padding: 2.5em;
+    border-bottom: 2px solid transparent;
+  }
+  .col-4:hover {
+    box-shadow: 1px 5px 20px 5px #ccc;
+    cursor: pointer;
+    border-bottom: 3px solid #00bfff;
+  }
+  .col-4:hover h3 {
+    color: #00bfff;
+  }
+}
+.m0 {
+  margin: 0px !important;
+}
+.p0 {
+  padding: 0px !important;
+}
+.p-10 {
+  padding: 10px;
+}
+.m-10 {
+  margin: 10px;
 }

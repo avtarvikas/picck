@@ -1,0 +1,63 @@
+@import "./vars.scss";
+.job-opening {
+  background: #f7f7f7;
+  padding: 20px 0px 20px 0px;
+
+  .page-header {
+    margin: 15px 0px;
+  }
+
+  .page-content {
+    margin: 40px 0px;
+  }
+  .tile.row {
+    align-items: baseline;
+    padding: 15px;
+    color: $color-black;
+    background: #ffffff;
+    margin: 7px 0px;
+    border: 1px solid #FFF;
+
+    .description {
+      @media screen and (max-width: 575px) {
+        text-align: center;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $color-blue;
+
+      .action-button {
+        button {
+          border: 2px solid #1c53ad;
+          background: #1c53ad;
+          color: #fff;
+          box-shadow: 4px 4px 10px 0px #4285f4;
+        }
+      }
+
+      .description,
+      .location {
+        color: $color-blue;
+      }
+    }
+
+    .location {
+      text-align: center;
+      color: #838686;
+    }
+
+    .action-button {
+      text-align: center;
+
+      button {
+        border-radius: 23px;
+        outline: none;
+        cursor: pointer;
+        background: #ffffff;
+        border: 2px solid $color-black;
+        color: $color-black;
+      }
+    }
+  }
+}
