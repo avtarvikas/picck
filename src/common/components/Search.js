@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Search extends Component {
   state = {
-    left: "60px"
+    left: "50px"
   };
 
   render() {
@@ -13,16 +13,16 @@ class Search extends Component {
           <h1>Find The Career You Deserve</h1>
           <div className="row titles m0">
             <span onClick={()=> this.setState({
-                left:"60px"
+                left:"50px"
             })}>Jobs</span>
             <span onClick={()=> this.setState({
-                left:"180px"
+                left:"165px"
             })}>Companies</span>
             <span onClick={()=> this.setState({
-                left:"306px"
+                left:"276px"
             })}>Salaries</span>
             <span onClick={()=> this.setState({
-                left:"430px"
+                left:"390px"
             })}>Interviews</span>
             <div className="arrow" style={{ marginLeft: left }} />
           </div>
