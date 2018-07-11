@@ -1,15 +1,18 @@
 .header {
-    padding: 15px 40px 12px;
+    padding-left: 20px;
+
     .brand-name{
         position: relative;
-        font-size: 30px;
+        font-size: 35px;
         display: inline-block;
     }
+
     .button-group{
         position: relative;
         display: inline-block;
         float: right;
         right: 2vw;
+
         button {
             margin: 3px 5px;
         }
