@@ -11,6 +11,10 @@
   border-bottom: 0.09rem solid #fff;
   padding-bottom: 10px; }
 
+@media screen and (max-width: 600px) {
+  .search-container .titles {
+    display: none; } }
+
 .search-container .titles span {
   display: inline-block;
   width: 22%; }
@@ -18,7 +22,6 @@
 .search-container .outer {
   margin: 5em auto;
   text-align: center;
-  width: 630px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   padding: 2em; }

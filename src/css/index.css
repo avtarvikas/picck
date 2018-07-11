@@ -106,7 +106,7 @@ footer {
       margin: 10px 20px; }
 
 .sign-in-page {
-  margin: 40px 0px; }
+  background: #f7f7f7; }
   .sign-in-page .page-content {
     margin: 40px 0px; }
     .sign-in-page .page-content .sign-in-role-container {
@@ -137,6 +137,10 @@ footer {
   border-bottom: 0.09rem solid #fff;
   padding-bottom: 10px; }
 
+@media screen and (max-width: 600px) {
+  .search-container .titles {
+    display: none; } }
+
 .search-container .titles span {
   display: inline-block;
   width: 22%; }
@@ -144,7 +148,6 @@ footer {
 .search-container .outer {
   margin: 5em auto;
   text-align: center;
-  width: 630px;
   background: rgba(0, 0, 0, 0.6);
   color: #ffffff;
   padding: 2em; }
@@ -206,8 +209,7 @@ footer {
   margin-left: 60px; }
 
 .job-opening {
-  background: #f7f7f7;
-  padding: 20px 0px 20px 0px; }
+  background: #f7f7f7; }
   .job-opening .page-header {
     margin: 15px 0px; }
   .job-opening .page-content {
@@ -255,6 +257,21 @@ body {
   overflow-y: scroll;
   overflow-x: hidden; }
 
+@media screen and (max-width: 767px) {
+  body {
+    text-align: center; }
+    body .hiring {
+      text-align: center; }
+      body .hiring .steps {
+        padding: 1em 2.5em; } }
+
+h1 {
+  font-size: 28px; }
+
+.section {
+  padding: 40px 0px;
+  margin: auto; }
+
 .banner {
   background: url("../assets/png/banner2.png") no-repeat center center;
   background-size: cover;
@@ -269,17 +286,20 @@ body {
       display: inline-block;
       margin: 10px 20px; }
 
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none; } }
+
 .hiring {
-  text-align: right;
-  margin: 5em; }
-  .hiring .col-4 {
+  text-align: right; }
+  .hiring .steps {
     padding: 2.5em;
     border-bottom: 2px solid transparent; }
-  .hiring .col-4:hover {
+  .hiring .steps:hover {
     box-shadow: 1px 5px 20px 5px #ccc;
     cursor: pointer;
     border-bottom: 3px solid #00bfff; }
-  .hiring .col-4:hover h3 {
+  .hiring .steps:hover h3 {
     color: #00bfff; }
 
 .m0 {

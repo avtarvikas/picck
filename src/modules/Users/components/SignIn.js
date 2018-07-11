@@ -5,10 +5,10 @@ import { logger } from "../../constants";
 class SignIn extends Component {
   render() {
     return (
-      <div className="sign-in-page">
+      <div className="sign-in-page section">
         <div className="container">
           <div className="page-header">
-            <h1>Sign In</h1>
+            <h1>SIGN IN</h1>
           </div>
           <div className="page-content row">
             {logger.map((obj, i) => (

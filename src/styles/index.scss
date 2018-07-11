@@ -28,6 +28,28 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    text-align: center;
+    .hiring{
+      text-align: center;
+
+      .steps{
+        padding: 1em 2.5em;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.section {
+  padding: 40px 0px;
+  margin: auto;
+}
+
 .banner {
   background: url("../assets/png/banner2.png") no-repeat center center;
   background-size: cover;
@@ -45,19 +67,23 @@ body {
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .banner {
+    display: none;
+  }
+}
 .hiring {
   text-align: right;
-  margin: 5em;
-  .col-4 {
+  .steps {
     padding: 2.5em;
     border-bottom: 2px solid transparent;
   }
-  .col-4:hover {
+  .steps:hover {
     box-shadow: 1px 5px 20px 5px #ccc;
     cursor: pointer;
     border-bottom: 3px solid #00bfff;
   }
-  .col-4:hover h3 {
+  .steps:hover h3 {
     color: #00bfff;
   }
 }

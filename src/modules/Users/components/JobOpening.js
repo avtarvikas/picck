@@ -4,10 +4,10 @@ import { jobOpening } from "../../constants";
 class SignIn extends Component {
   render() {
     return (
-      <div className="job-opening row m0">
+      <div className="job-opening section row m0">
         <div className="container">
           <div className="page-header">
-            <h1>Current Job Openings</h1>
+            <h1>CURRENT JOB OPENINGS</h1>
           </div>
           {jobOpening.map((obj, i) => (
             <div className="tile row" key={i}>

@@ -1,0 +1,13 @@
+.header {
+  padding-left: 20px; }
+  .header .brand-name {
+    position: relative;
+    font-size: 35px;
+    display: inline-block; }
+  .header .button-group {
+    position: relative;
+    display: inline-block;
+    float: right;
+    right: 2vw; }
+    .header .button-group button {
+      margin: 3px 5px; }
