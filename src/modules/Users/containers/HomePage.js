@@ -12,9 +12,9 @@ class HomePage extends Component {
       <div>
         <Header />
         <Banner />
+        <JobOpening />
         <SignIn />
         <HiringProcess />
-        <JobOpening />
         <Footer />
       </div>
     );

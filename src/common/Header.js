@@ -42,7 +42,7 @@ class Header extends Component {
                 <a className="nav-link disabled" href="">
                   <Button
                     disabled={false}
-                    value="Sign up"
+                    value="Sign In"
                     className="bg-blue"
                   />
                 </a>

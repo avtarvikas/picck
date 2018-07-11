@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { logger } from "../../constants";
+import { Link } from 'react-router-dom';
 
 class SignIn extends Component {
   render() {
+    console.log(this.props,'================');
     return (
       <div className="sign-in-page section">
         <div className="container">
@@ -11,10 +13,10 @@ class SignIn extends Component {
           </div>
           <div className="page-content row">
             {logger.map((obj, i) => (
-              <div className="col-md-3 sign-in-role-container" key={i}>
-                <img src={obj.logo} width={100} height={100} alt=""/>
-                <div className="role-name">{obj.role}</div>
-              </div>
+              <Link to={obj.link} className="col-md-3 sign-in-role-container" key={i}>
+                  <img src={obj.logo} width={100} height={100} alt=""/>
+                  <div className="role-name">{obj.role}</div>
+              </Link>
             ))}
           </div>
         </div>

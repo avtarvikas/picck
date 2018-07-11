@@ -1,18 +1,19 @@
 .header {
     padding-left: 20px;
-
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
     .brand-name{
         position: relative;
         font-size: 35px;
         display: inline-block;
     }
-
     .button-group{
         position: relative;
         display: inline-block;
         float: right;
         right: 2vw;
-
         button {
             margin: 3px 5px;
         }

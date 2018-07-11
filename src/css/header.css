@@ -1,5 +1,9 @@
 .header {
-  padding-left: 20px; }
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1; }
   .header .brand-name {
     position: relative;
     font-size: 35px;
