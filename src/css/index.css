@@ -161,7 +161,12 @@ footer {
     text-align: center;
     margin-bottom: 3em; }
   .search-container .outer .form {
-    height: 60px; }
+    height: 60px;
+    z-index: 2;
+    position: relative; }
+    .search-container .outer .form.search-bar-fixed {
+      position: fixed;
+      top: 8px; }
     .search-container .outer .form .keyword, .search-container .outer .form .loc, .search-container .outer .form .search-btn {
       outline: none; }
     .search-container .outer .form .keyword, .search-container .outer .form .loc {

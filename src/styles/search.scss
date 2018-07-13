@@ -40,6 +40,12 @@
     }
     .form {
       height: 60px;
+      z-index: 2;
+      position: relative;
+      &.search-bar-fixed {
+        position: fixed;
+        top: 8px;
+      }
       .keyword, .loc, .search-btn {
         outline: none;
       }

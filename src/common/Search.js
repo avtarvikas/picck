@@ -6,6 +6,7 @@ class Search extends Component {
   };
 
   render() {
+    const { searchBarFixed } = this.props;
     const { left } = this.state;
     return (
       <div className="search-container">
@@ -27,7 +28,7 @@ class Search extends Component {
             <div className="arrow" style={{ marginLeft: left }} />
           </div>
           <form className="form-group" />
-          <div className="row form">
+          <div className={`row form ${searchBarFixed ? 'search-bar-fixed' : ''}`}>
             <input
               name="sc.keyword"
               id="KeywordSearch"

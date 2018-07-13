@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router-dom'
 import DeviceUtil from "./common/Util/DeviceUtil";
 
 class App extends Component {
@@ -11,4 +12,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

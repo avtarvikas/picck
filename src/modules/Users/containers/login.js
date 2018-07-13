@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router-dom'
 import Header from "../../../common/Header";
 import google from "../../../assets/png/google.png";
 import fblogo from "../../../assets/png/Fb.png";
@@ -6,16 +7,37 @@ import linkedin from "../../../assets/png/linkedin.png";
 import yahoo from "../../../assets/png/yahoo.png";
 import twitter from "../../../assets/png/twitter.png";
 import instagram from "../../../assets/png/instagram.png";
-
+import user from "../../../assets/png/user.png";
+import recruiter from "../../../assets/png/recruiter.png";
+import company from "../../../assets/png/company.png";
+import marketing from "../../../assets/png/marketing.png";
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    
+  }
   render() {
+    console.log(this.props, '==============')
+    let imagesrc = user;
+    if (this.props.match.params.id == 'm'){
+      imagesrc = marketing
+    }
+    else if (this.props.match.params.id == 'r'){
+      imagesrc = recruiter
+    }
+    else if (this.props.match.params.id == 'p'){
+      imagesrc = user
+    }
+    else if (this.props.match.params.id == 'c'){
+      imagesrc = company
+    }
     return (
       <div>
       <Header />
         <div className="container login">
           <div class="outer">
             <form class="form-group">
-              <img src="" alt='login-user'/>
+              <img src={imagesrc} alt='login-user'/>
               <input type="text" name="username" placeholder="Username" />
               <input type="password" name="password" placeholder="Password" />
               <button type="submit" class="btn-primary">Login</button>
@@ -37,4 +59,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
