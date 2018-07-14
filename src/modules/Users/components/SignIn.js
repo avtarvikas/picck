@@ -13,7 +13,7 @@ class SignIn extends Component {
           </div>
           <div className="page-content row">
             {logger.map((obj, i) => (
-              <div onClick={() => { this.props.history.push(obj.link)}} className="col-md-3 sign-in-role-container" key={i}>
+              <div onClick={() => { this.props.history.push(obj.link)}} className="col-md-6 sign-in-role-container" key={i}>
                 <img src={obj.logo} width={100} height={100} alt=""/>
                 <div className="role-name">{obj.role}</div>
               </div>

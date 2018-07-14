@@ -11,24 +11,18 @@ import user from "../../../assets/png/user.png";
 import recruiter from "../../../assets/png/recruiter.png";
 import company from "../../../assets/png/company.png";
 import marketing from "../../../assets/png/marketing.png";
+
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    
-  }
   render() {
-    console.log(this.props, '==============')
+    const { id } = this.props.match.params;
     let imagesrc = user;
-    if (this.props.match.params.id == 'm'){
+    if (id == 'm'){
       imagesrc = marketing
-    }
-    else if (this.props.match.params.id == 'r'){
+    } else if (id == 'r'){
       imagesrc = recruiter
-    }
-    else if (this.props.match.params.id == 'p'){
+    } else if (id == 'p'){
       imagesrc = user
-    }
-    else if (this.props.match.params.id == 'c'){
+    } else if (id == 'c'){
       imagesrc = company
     }
     return (

@@ -6,8 +6,13 @@ class Search extends Component {
   };
 
   render() {
-    const { searchBarFixed } = this.props;
+    const { searchBarFixed, activeTab } = this.props;
     const { left } = this.state;
+    let marginLeft = null;
+    if(activeTab == 'job') {
+      marginLeft = '50px';
+    }
+    console.log(marginLeft, activeTab);
     return (
       <div className="search-container">
         <div className="container outer">
@@ -25,7 +30,7 @@ class Search extends Component {
             <span onClick={()=> this.setState({
                 left:"390px"
             })}>Forum</span>
-            <div className="arrow" style={{ marginLeft: left }} />
+            <div className="arrow" style={{ marginLeft: marginLeft }} />
           </div>
           <form className="form-group" />
           <div className={`row form ${searchBarFixed ? 'search-bar-fixed' : ''}`}>

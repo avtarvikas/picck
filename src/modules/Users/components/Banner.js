@@ -21,11 +21,12 @@ class Banner extends Component {
     }
   }
   render() {
+
     return (
       <div className="banner row m0">
         <div className="container">
           <div className="row m0">
-            <Search searchBarFixed={this.state.searchBarFixed}/>
+            <Search activeTab={this.props.activeSearchTab} searchBarFixed={this.state.searchBarFixed}/>
           </div>
         </div>
       </div>
