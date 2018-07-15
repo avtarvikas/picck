@@ -33,7 +33,7 @@ class Search extends Component {
             <div className="arrow" style={{ marginLeft: marginLeft }} />
           </div>
           <form className="form-group" />
-          <div className={`row form ${searchBarFixed ? 'search-bar-fixed' : ''}`}>
+          <div className={`row form m0 ${searchBarFixed ? 'search-bar-fixed' : ''}`}>
             <input
               name="sc.keyword"
               id="KeywordSearch"

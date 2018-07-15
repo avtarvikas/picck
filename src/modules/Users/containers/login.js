@@ -29,14 +29,14 @@ class Login extends Component {
       <div>
       <Header />
         <div className="container login">
-          <div class="outer">
-            <form class="form-group">
+          <div className="outer">
+            <form className="form-group">
               <img src={imagesrc} alt='login-user'/>
               <input type="text" name="username" placeholder="Username" />
               <input type="password" name="password" placeholder="Password" />
-              <button type="submit" class="btn-primary">Login</button>
+              <button type="submit" className="btn-primary">Login</button>
             </form>
-            <div class="icons">
+            <div className="icons">
               <div className='row'>
                 <img src={google} alt='google' />
                 <img src={fblogo} alt='facebook' />
