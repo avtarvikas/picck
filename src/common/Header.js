@@ -26,10 +26,9 @@ class Header extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
+              {/*<li className="nav-item active">
                 <a className="nav-link" href="">
                 <Button
                     disabled={false}
@@ -37,7 +36,7 @@ class Header extends Component {
                     className="bg-yellow"
                   />
                 </a>
-              </li>
+              </li>*/}
               <li className="nav-item">
                 <a className="nav-link disabled" href="">
                   <Button

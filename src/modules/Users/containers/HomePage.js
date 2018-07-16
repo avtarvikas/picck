@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router'
 import Header from "../../../common/Header";
 import Footer from "../../../common/Footer";
 import Banner from "../components/Banner";
@@ -38,4 +39,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default withRouter(HomePage);

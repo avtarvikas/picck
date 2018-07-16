@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import Header from "../../../common/Header";
 import google from "../../../assets/png/google.png";
 import fblogo from "../../../assets/png/Fb.png";
@@ -13,6 +13,9 @@ import company from "../../../assets/png/company.png";
 import marketing from "../../../assets/png/marketing.png";
 
 class Login extends Component {
+  componentDidMount(){
+    console.log('==========================')
+  }
   render() {
     const { id } = this.props.match.params;
     let imagesrc = user;

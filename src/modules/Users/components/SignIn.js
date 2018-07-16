@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Redirect } from "react-router-dom";
 import { logger } from "../../constants";
 import { Link } from "react-router-dom";
 
 class SignIn extends Component {
+  redirect(to) {
+    console.log(this.props, '00000000000000000000000');
+    this.props.history.push(to, {});
+  }
   render() {
     console.log(this.props);
-    
     return (
       <div className="sign-in-page section">
         <div className="container">
@@ -18,9 +21,7 @@ class SignIn extends Component {
               <div className="row m0">
                 {logger.map((obj, i) => (
                   <div
-                    onClick={() => {
-                      this.props.history.push(obj.link);
-                    }}
+                    onClick={() => this.redirect(obj.link)}
                     className="col-md-6 sign-in-role-container"
                     key={i}
                   >
