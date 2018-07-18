@@ -3,10 +3,6 @@ import { withRouter, Link } from "react-router-dom";
 import { logger } from "../../constants";
 
 class SignIn extends Component {
-  redirect(to) {
-    console.log(this.props, '00000000000000000000000');
-    this.props.history.push(to, {});
-  }
   render() {
     console.log(this.props);
     return (

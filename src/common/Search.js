@@ -1,8 +1,11 @@
 import React, { Component } from "react";
 
 class Search extends Component {
-  state = {
-    left: "50px"
+  constructor(props){
+    super(props);
+    this.state = {
+      left: "1%"
+    };
   };
 
   render() {
@@ -19,18 +22,18 @@ class Search extends Component {
           <h1>Find The Career You Deserve</h1>
           <div className="row titles m0">
             <span onClick={()=> this.setState({
-                left:"50px"
+                left:"1%"
             })}>Jobs</span>
             <span onClick={()=> this.setState({
-                left:"165px"
+                left:"26%"
             })}>Companies</span>
             <span onClick={()=> this.setState({
-                left:"276px"
+                left:"51%"
             })}>Learning</span>
             <span onClick={()=> this.setState({
-                left:"390px"
+                left:"76%"
             })}>Forum</span>
-            <div className="arrow" style={{ marginLeft: marginLeft }} />
+            <div className="arrow" style={{ marginLeft: left }} />
           </div>
           <form className="form-group" />
           <div className={`row form m0 ${searchBarFixed ? 'search-bar-fixed' : ''}`}>
