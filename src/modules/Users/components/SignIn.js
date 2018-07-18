@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { withRouter, Redirect } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { logger } from "../../constants";
-import { Link } from "react-router-dom";
 
 class SignIn extends Component {
   redirect(to) {
@@ -20,14 +19,14 @@ class SignIn extends Component {
             <div className="col-md-8">
               <div className="row m0">
                 {logger.map((obj, i) => (
-                  <div
-                    onClick={() => this.redirect(obj.link)}
+                  <Link
+                    to={obj.link}
                     className="col-md-6 sign-in-role-container"
                     key={i}
                   >
                     <img src={obj.logo} width={100} height={100} alt="" />
                     <div className="role-name">{obj.role}</div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
