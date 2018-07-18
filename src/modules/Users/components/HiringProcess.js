@@ -6,7 +6,7 @@ class HiringProcess extends Component {
     return (
       <div className="container section hiring">
         <h1>
-          HIRING<br />PROCESS
+        Why to Choose Us
         </h1>
         <div className="row m0 upper">
           {hiringProcess.map((step, i) => (
