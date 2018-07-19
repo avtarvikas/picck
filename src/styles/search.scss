@@ -1,8 +1,6 @@
 @import "./vars.scss";
 
 .search-container {
-  width: 90vw;
-  max-width: 540px;
   margin: 0 100px;
   @media screen and (max-width:768px) {
     margin: 0 auto;
@@ -25,7 +23,7 @@
       span {
         display: inline-block;
         width: 25%;
-        text-align: left;
+        text-align: center;
       }
       .arrow {
         position: absolute;
@@ -49,6 +47,7 @@
       height: 60px;
       z-index: 2;
       position: relative;
+      border: 1px solid #4285f4;
       &.search-bar-fixed {
         position: fixed;
         top: 8px;
@@ -57,7 +56,6 @@
         outline: none;
       }
       .keyword, .loc {
-        height: inherit;
         -webkit-appearance: none;
         padding: 0 20px;
         font-size: 16px;

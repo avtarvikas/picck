@@ -11,13 +11,16 @@
     }
     .form-group {
         text-align: center;
-        margin-bottom: 3em;
+        // margin-bottom: 3em;
         img {
             margin-bottom: 3em;
             height: 150px;
             width: 150px;
             border-radius: 50%;
             background: grey;
+        }
+        .login-with{
+            font-size: 20px;
         }
         input {
             display: block;

@@ -1,6 +1,4 @@
 .search-container {
-  width: 90vw;
-  max-width: 540px;
   margin: 0 100px; }
   @media screen and (max-width: 768px) {
     .search-container {
@@ -22,7 +20,7 @@
       .search-container .outer .titles span {
         display: inline-block;
         width: 25%;
-        text-align: left; }
+        text-align: center; }
       .search-container .outer .titles .arrow {
         position: absolute;
         display: block;
@@ -41,14 +39,14 @@
     .search-container .outer .form {
       height: 60px;
       z-index: 2;
-      position: relative; }
+      position: relative;
+      border: 1px solid #4285f4; }
       .search-container .outer .form.search-bar-fixed {
         position: fixed;
         top: 8px; }
       .search-container .outer .form .keyword, .search-container .outer .form .loc, .search-container .outer .form .search-btn {
         outline: none; }
       .search-container .outer .form .keyword, .search-container .outer .form .loc {
-        height: inherit;
         -webkit-appearance: none;
         padding: 0 20px;
         font-size: 16px;

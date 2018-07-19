@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div className="header">
         <nav className="navbar navbar-expand-lg navbar-light">
-          <a className="navbar-brand" href="">
+          <a className="navbar-brand" href="/">
           {/* <img src={logo} width={90}/> */}
             <div className="brand-name">
               <span className="text-blue">P</span>
@@ -38,7 +38,7 @@ class Header extends Component {
                 </a>
               </li>*/}
               <li className="nav-item">
-                <a className="nav-link disabled" href="">
+                <a className="nav-link disabled" href="/#sign-in-section">
                   <Button
                     disabled={false}
                     value="Sign In"

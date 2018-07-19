@@ -4,17 +4,17 @@ class Search extends Component {
   constructor(props){
     super(props);
     this.state = {
-      left: "1%"
+      left: "11%"
     };
   };
 
   render() {
     const { searchBarFixed, activeTab } = this.props;
     const { left } = this.state;
-    let marginLeft = null;
-    if(activeTab == 'job') {
-      marginLeft = '50px';
-    }
+    let marginLeft = this.state.left;
+    // if(activeTab == 'job') {
+    //   marginLeft = '50px';
+    // }
     console.log(marginLeft, activeTab);
     return (
       <div className="search-container">
@@ -22,17 +22,17 @@ class Search extends Component {
           <h1>Find The Career You Deserve</h1>
           <div className="row titles m0">
             <span onClick={()=> this.setState({
-                left:"1%"
+                left:"11%"
             })}>Jobs</span>
             <span onClick={()=> this.setState({
-                left:"26%"
+                left:"36%"
             })}>Companies</span>
             <span onClick={()=> this.setState({
-                left:"51%"
-            })}>Learning</span>
+                left:"61%"
+            })}>Topics</span>
             <span onClick={()=> this.setState({
-                left:"76%"
-            })}>Forum</span>
+                left:"86%"
+            })}>Community</span>
             <div className="arrow" style={{ marginLeft: left }} />
           </div>
           <form className="form-group" />

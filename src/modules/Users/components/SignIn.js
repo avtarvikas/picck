@@ -6,7 +6,7 @@ class SignIn extends Component {
   render() {
     console.log(this.props);
     return (
-      <div className="sign-in-page section">
+      <div className="sign-in-page section" id="sign-in-section">
         <div className="container">
           <div className="page-header">
             <h1>SIGN IN</h1>

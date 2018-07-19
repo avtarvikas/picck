@@ -36,9 +36,10 @@ class Login extends Component {
           <div className="outer">
             <form className="form-group">
               <img src={imagesrc} alt='login-user'/>
-              <input type="text" name="username" placeholder="Username" />
+              <div className="login-with">Login With</div>
+              {/* <input type="text" name="username" placeholder="Username" />
               <input type="password" name="password" placeholder="Password" />
-              <button type="submit" className="btn-primary">Login</button>
+              <button type="submit" className="btn-primary">Login</button> */}
             </form>
             <div className="icons">
               <div className='row'>

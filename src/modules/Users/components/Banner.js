@@ -12,8 +12,10 @@ class Banner extends Component {
   componentDidMount(){
     window.addEventListener("scroll", this.pageScroll);
   }
+  componentWillUnmount(){
+    window.removeEventListener("scroll", this.pageScroll);
+  }
   pageScroll(){
-    console.log(window.pageYOffset, this.state)
     if(window.pageYOffset > 328) {
       this.setState({searchBarFixed: true});
     } else {
