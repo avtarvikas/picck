@@ -18,39 +18,39 @@ export const logger = [
 
 export const hiringProcess = [
   {
-    label: "Application",
+    label: "Cost Effective",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "We are almost free for employee / Employer.",
     image: application
   },
   {
-    label: "Initial Interview",
+    label: "Flat Pricing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "You dont have pay to our services, Use then pay.",
     image: interview
   },
   {
-    label: "Final Interview",
+    label: "Recruit a Back Ground Verified Profile ",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "",
     image: finalInterview
   },
   {
-    label: "Assessment",
+    label: "End to END",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Company that takes care of Employment / Payrole / Consulting / Hiring / BGV.",
     image: assessment
   },
   {
-    label: "Decision",
+    label: "Integrate with your Company Website",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "For careers.",
     image: decision
   },
   {
-    label: "Offer",
+    label: "Hire for task and Freelancing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "",
     image: offer
   }
 ];

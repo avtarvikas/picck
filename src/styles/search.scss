@@ -1,6 +1,10 @@
 @import "./vars.scss";
 
 .search-container {
+  margin: 0 100px;
+  @media screen and (max-width:768px) {
+    margin: 0 auto;
+  }
   .outer {
     margin: 5em auto;
     text-align: center;
@@ -18,7 +22,8 @@
       padding-bottom: 10px;
       span {
         display: inline-block;
-        width: 22%;
+        width: 25%;
+        text-align: center;
       }
       .arrow {
         position: absolute;
@@ -27,7 +32,7 @@
         width: 10px;
         transition: 0.4s;
         border-left: 0.09rem solid #fff;
-        bottom: -6px;
+        bottom: -5px;
         transform: rotate(45deg);
         border-top: 0.09rem solid #fff;
         background: #012e4b;
@@ -42,6 +47,7 @@
       height: 60px;
       z-index: 2;
       position: relative;
+      border: 1px solid #4285f4;
       &.search-bar-fixed {
         position: fixed;
         top: 8px;
@@ -50,7 +56,6 @@
         outline: none;
       }
       .keyword, .loc {
-        height: inherit;
         -webkit-appearance: none;
         padding: 0 20px;
         font-size: 16px;

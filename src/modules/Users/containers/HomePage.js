@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from 'react-router'
 import Header from "../../../common/Header";
 import Footer from "../../../common/Footer";
 import Banner from "../components/Banner";
@@ -7,12 +8,29 @@ import JobOpening from "../components/JobOpening";
 import HiringProcess from "../components/HiringProcess";
 
 class HomePage extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      activeSearchTab: 'job'
+    };
+    this.onActiveSearchTabChange = this.onActiveSearchTabChange.bind(this);
+  }
+  onActiveSearchTabChange(){
+
+  }
   render() {
+    let active = null;
+    if(this.state.activeSearchTab == 'job'){
+      active = <JobOpening />
+    }
     return (
       <div>
         <Header />
-        <Banner />
-        <JobOpening />
+        <Banner
+          activeSearchTab={this.state.activeSearchTab}
+          onActiveSearchTabChange={this.onActiveSearchTabChange}
+        />
+        {active}
         <SignIn />
         <HiringProcess />
         <Footer />
@@ -21,4 +39,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default withRouter(HomePage);

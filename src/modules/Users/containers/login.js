@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { withRouter } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { withRouter } from 'react-router'
 import Header from "../../../common/Header";
 import google from "../../../assets/png/google.png";
 import fblogo from "../../../assets/png/Fb.png";
@@ -11,45 +12,73 @@ import user from "../../../assets/png/user.png";
 import recruiter from "../../../assets/png/recruiter.png";
 import company from "../../../assets/png/company.png";
 import marketing from "../../../assets/png/marketing.png";
+
 class Login extends Component {
-  constructor(props) {
-    super(props);
-    
+  componentDidMount(){
+    console.log('==========================')
   }
   render() {
-    console.log(this.props, '==============')
+    const { id } = this.props.match.params;
     let imagesrc = user;
-    if (this.props.match.params.id == 'm'){
+    if (id == 'm'){
       imagesrc = marketing
-    }
-    else if (this.props.match.params.id == 'r'){
+    } else if (id == 'r'){
       imagesrc = recruiter
-    }
-    else if (this.props.match.params.id == 'p'){
+    } else if (id == 'p'){
       imagesrc = user
-    }
-    else if (this.props.match.params.id == 'c'){
+    } else if (id == 'c'){
       imagesrc = company
     }
     return (
       <div>
       <Header />
         <div className="container login">
-          <div class="outer">
-            <form class="form-group">
+          <div className="outer">
+            <form className="form-group">
               <img src={imagesrc} alt='login-user'/>
-              <input type="text" name="username" placeholder="Username" />
+              <div className="login-with">Login With</div>
+              {/* <input type="text" name="username" placeholder="Username" />
               <input type="password" name="password" placeholder="Password" />
-              <button type="submit" class="btn-primary">Login</button>
+              <button type="submit" className="btn-primary">Login</button> */}
             </form>
-            <div class="icons">
+            <div className="icons">
               <div className='row'>
-                <img src={google} alt='google' />
-                <img src={fblogo} alt='facebook' />
-                <img src={linkedin} alt='linkedin' />
-                <img src={yahoo} alt='yahoo' />
-                <img src={twitter} alt='twitter' />
-                <img src={instagram} alt='instagram' />
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={google} alt='google' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={fblogo} alt='facebook' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={linkedin} alt='linkedin' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={yahoo} alt='yahoo' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={twitter} alt='twitter' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={instagram} alt='instagram' />
+                </Link>
               </div>
             </div>
           </div>

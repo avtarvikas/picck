@@ -11,13 +11,16 @@
     }
     .form-group {
         text-align: center;
-        margin-bottom: 3em;
+        // margin-bottom: 3em;
         img {
             margin-bottom: 3em;
             height: 150px;
             width: 150px;
             border-radius: 50%;
             background: grey;
+        }
+        .login-with{
+            font-size: 20px;
         }
         input {
             display: block;
@@ -42,9 +45,13 @@
         padding: 0 50px;
         height: 50px;
         display: flex;
+        a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         img {
             display: inline-block;
-            width: 9%;
+            width: 100%;
             margin: auto;
             text-align: center;
             border-radius: 50%;

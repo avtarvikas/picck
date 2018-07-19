@@ -1,34 +1,42 @@
 import React, { Component } from "react";
 
 class Search extends Component {
-  state = {
-    left: "50px"
+  constructor(props){
+    super(props);
+    this.state = {
+      left: "11%"
+    };
   };
 
   render() {
-    const { searchBarFixed } = this.props;
+    const { searchBarFixed, activeTab } = this.props;
     const { left } = this.state;
+    let marginLeft = this.state.left;
+    // if(activeTab == 'job') {
+    //   marginLeft = '50px';
+    // }
+    console.log(marginLeft, activeTab);
     return (
       <div className="search-container">
         <div className="container outer">
           <h1>Find The Career You Deserve</h1>
           <div className="row titles m0">
             <span onClick={()=> this.setState({
-                left:"50px"
+                left:"11%"
             })}>Jobs</span>
             <span onClick={()=> this.setState({
-                left:"165px"
+                left:"36%"
             })}>Companies</span>
             <span onClick={()=> this.setState({
-                left:"276px"
-            })}>Learning</span>
+                left:"61%"
+            })}>Topics</span>
             <span onClick={()=> this.setState({
-                left:"390px"
-            })}>Forum</span>
+                left:"86%"
+            })}>Community</span>
             <div className="arrow" style={{ marginLeft: left }} />
           </div>
           <form className="form-group" />
-          <div className={`row form ${searchBarFixed ? 'search-bar-fixed' : ''}`}>
+          <div className={`row form m0 ${searchBarFixed ? 'search-bar-fixed' : ''}`}>
             <input
               name="sc.keyword"
               id="KeywordSearch"

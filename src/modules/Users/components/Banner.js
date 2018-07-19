@@ -12,8 +12,10 @@ class Banner extends Component {
   componentDidMount(){
     window.addEventListener("scroll", this.pageScroll);
   }
+  componentWillUnmount(){
+    window.removeEventListener("scroll", this.pageScroll);
+  }
   pageScroll(){
-    console.log(window.pageYOffset, this.state)
     if(window.pageYOffset > 328) {
       this.setState({searchBarFixed: true});
     } else {
@@ -21,13 +23,10 @@ class Banner extends Component {
     }
   }
   render() {
+
     return (
       <div className="banner row m0">
-        <div className="container">
-          <div className="row m0">
-            <Search searchBarFixed={this.state.searchBarFixed}/>
-          </div>
-        </div>
+        <Search activeTab={this.props.activeSearchTab} searchBarFixed={this.state.searchBarFixed}/>
       </div>
     );
   }
