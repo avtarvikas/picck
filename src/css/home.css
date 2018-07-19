@@ -1,7 +1,7 @@
 .banner {
-  background: url("../assets/png/banner2.png") no-repeat center center;
+  background: url("../assets/png/banner.png") no-repeat center center;
   background-size: cover;
-  min-height: 500px;
+  min-height: 605px;
   color: white; }
   .banner .banner-text {
     margin-top: 130px; }

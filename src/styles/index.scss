@@ -16,6 +16,7 @@
 @import "./home.scss";
 @import "./search.scss";
 @import "./jobOpening.scss";
+@import "./login.scss";
 
 body {
   font-family: "Josefin Sans";
@@ -33,7 +34,6 @@ body {
     text-align: center;
     .hiring{
       text-align: center;
-
       .steps{
         padding: 1em 2.5em;
       }
@@ -50,23 +50,6 @@ h1 {
   margin: auto;
 }
 
-.banner {
-  background: url("../assets/png/banner.png") no-repeat center center;
-  background-size: cover;
-  min-height: 605px;
-  color: white;
-  .banner-text {
-    margin-top: 130px;
-    h1 {
-      display: inline-block;
-      margin: 15px 20px;
-    }
-    h3 {
-      display: inline-block;
-      margin: 10px 20px;
-    }
-  }
-}
 @media screen and (max-width: 600px) {
   .banner {
     display: none;

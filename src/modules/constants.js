@@ -10,47 +10,47 @@ import decision from "../assets/png/icon5.png";
 import offer from "../assets/png/icon6.png";
 
 export const logger = [
-  { role: "Professional", logo: user },
-  { role: "Company", logo: company },
-  { role: "Recruiter", logo: recruiter },
-  { role: "Marketing", logo: marketing }
+  { role: "Professional", logo: user, link: '/login/p' },
+  { role: "Company", logo: company, link: '/login/c' },
+  { role: "Recruiter", logo: recruiter, link: '/login/r' },
+  { role: "Marketing", logo: marketing, link: '/login/m' }
 ];
 
 export const hiringProcess = [
   {
-    label: "Application",
+    label: "Cost Effective",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "We are almost free for employee / Employer.",
     image: application
   },
   {
-    label: "Initial Interview",
+    label: "Flat Pricing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "You dont have pay to our services, Use then pay.",
     image: interview
   },
   {
-    label: "Final Interview",
+    label: "Recruit a Back Ground Verified Profile ",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "",
     image: finalInterview
   },
   {
-    label: "Assessment",
+    label: "End to END",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Company that takes care of Employment / Payrole / Consulting / Hiring / BGV.",
     image: assessment
   },
   {
-    label: "Decision",
+    label: "Integrate with your Company Website",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "For careers.",
     image: decision
   },
   {
-    label: "Offer",
+    label: "Hire for task and Freelancing",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "",
     image: offer
   }
 ];
