@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { withRouter } from 'react-router'
 import Header from "../../../common/Header";
 import google from "../../../assets/png/google.png";
@@ -41,12 +42,42 @@ class Login extends Component {
             </form>
             <div className="icons">
               <div className='row'>
-                <img src={google} alt='google' />
-                <img src={fblogo} alt='facebook' />
-                <img src={linkedin} alt='linkedin' />
-                <img src={yahoo} alt='yahoo' />
-                <img src={twitter} alt='twitter' />
-                <img src={instagram} alt='instagram' />
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={google} alt='google' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={fblogo} alt='facebook' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={linkedin} alt='linkedin' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={yahoo} alt='yahoo' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={twitter} alt='twitter' />
+                </Link>
+                <Link
+                  to="/"
+                  className="col-md-2"
+                >
+                  <img src={instagram} alt='instagram' />
+                </Link>
               </div>
             </div>
           </div>
