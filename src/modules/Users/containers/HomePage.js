@@ -6,12 +6,15 @@ import Banner from "../components/Banner";
 import SignIn from "../components/SignIn";
 import JobOpening from "../components/JobOpening";
 import HiringProcess from "../components/HiringProcess";
+import LatestCompanies from "../components/LatestCompanies";
+import CommunityUpdates from "../components/CommunityUpdates";
+import Topic from "../components/Topic";
 
 class HomePage extends Component {
   constructor(props){
     super(props);
     this.state = {
-      activeSearchTab: 'job'
+      activeSearchTab: 'jobs'
     };
     this.onActiveSearchTabChange = this.onActiveSearchTabChange.bind(this);
   }
@@ -19,16 +22,24 @@ class HomePage extends Component {
 
   }
   render() {
+    console.log(this.state,'STATE')
+    const { activeSearchTab } = this.state;
     let active = null;
-    if(this.state.activeSearchTab == 'job'){
+    if(activeSearchTab == 'jobs') {
       active = <JobOpening />
+    } else if(activeSearchTab == 'company') {
+      active = <LatestCompanies />
+    } else if(activeSearchTab == 'community') {
+      active = <CommunityUpdates />
+    } else if(activeSearchTab == 'topics') {
+      active = <Topic />
     }
     return (
       <div>
         <Header />
         <Banner
-          activeSearchTab={this.state.activeSearchTab}
-          onActiveSearchTabChange={this.onActiveSearchTabChange}
+          activeSearchTab={activeSearchTab}
+          onActiveSearchTabChange={activeSearchTab => this.setState({activeSearchTab})}
         />
         {active}
         <SignIn />
