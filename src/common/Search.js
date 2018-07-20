@@ -3,36 +3,30 @@ import React, { Component } from "react";
 class Search extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      left: "11%"
-    };
+    this.state = { };
   };
 
   render() {
-    const { searchBarFixed, activeTab } = this.props;
-    const { left } = this.state;
-    let marginLeft = this.state.left;
-    // if(activeTab == 'job') {
-    //   marginLeft = '50px';
-    // }
-    console.log(marginLeft, activeTab);
+    const { searchBarFixed, activeTab, onActiveSearchTabChange } = this.props;
+    let left;
+    if( activeTab == 'jobs' ){
+      left = '11%';
+    } else if( activeTab == 'company' ){
+      left = '36%';
+    } else if( activeTab == 'community' ){
+      left = '61%';
+    } else if ( activeTab == 'topics'){
+      left = '86%';
+    }
     return (
       <div className="search-container">
         <div className="container outer">
           <h1>Find The Career You Deserve</h1>
           <div className="row titles m0">
-            <span onClick={()=> this.setState({
-                left:"11%"
-            })}>Jobs</span>
-            <span onClick={()=> this.setState({
-                left:"36%"
-            })}>Companies</span>
-            <span onClick={()=> this.setState({
-                left:"61%"
-            })}>Topics</span>
-            <span onClick={()=> this.setState({
-                left:"86%"
-            })}>Community</span>
+            <span onClick={() => onActiveSearchTabChange('jobs')}>Latest Jobs</span>
+            <span onClick={() => onActiveSearchTabChange('company')}>Company Updates</span>
+            <span onClick={() => onActiveSearchTabChange('community')}>Community Updates</span>
+            <span onClick={() => onActiveSearchTabChange('topics')}>Topic</span>
             <div className="arrow" style={{ marginLeft: left }} />
           </div>
           <form className="form-group" />

@@ -19,8 +19,9 @@
       padding-bottom: 10px; }
       .search-container .outer .titles span {
         display: inline-block;
-        width: 25%;
-        text-align: center; }
+        min-width: 20%;
+        text-align: center;
+        padding: 0 .7vw; }
       .search-container .outer .titles .arrow {
         position: absolute;
         display: block;

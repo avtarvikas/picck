@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { jobOpening } from "../../constants";
 
-class JobOpening extends Component {
+class Topic extends Component {
   render() {
     return (
       <div className="job-opening section row m0">
         <div className="container">
           <div className="page-header">
-            <h1>Current Job Openings</h1>
+            <h1>Topic</h1>
           </div>
           {jobOpening.map((obj, i) => (
             <div className="tile row" key={i}>
@@ -29,4 +29,4 @@ class JobOpening extends Component {
   }
 }
 
-export default JobOpening;
+export default Topic;

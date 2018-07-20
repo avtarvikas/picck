@@ -26,7 +26,10 @@ class Banner extends Component {
 
     return (
       <div className="banner row m0">
-        <Search activeTab={this.props.activeSearchTab} searchBarFixed={this.state.searchBarFixed}/>
+        <Search
+          activeTab={this.props.activeSearchTab}
+          onActiveSearchTabChange={this.props.onActiveSearchTabChange}
+          searchBarFixed={this.state.searchBarFixed}/>
       </div>
     );
   }
