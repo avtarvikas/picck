@@ -22,37 +22,18 @@ class Signup extends Component {
               <p>
                 Already a member? <Link
                 to="/">
-                <span>Login</span>
+                <span>Log in</span>
                 </Link>
               </p>             
             </form>
           </div>
           <div className="right">
             <div>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
-              <Link to="/">
-                
-              </Link>
+              <div className="links">
+                <Link to="/" >
+                  <p>Sign up with Facebook</p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

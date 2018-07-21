@@ -312,22 +312,31 @@ footer {
   width: 50%; }
   .container.signup .left p {
     text-align: center; }
+    .container.signup .left p a {
+      color: #000;
+      font-weight: 700; }
+    .container.signup .left p a:hover {
+      text-decoration: none; }
+  .container.signup .left form input {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 1rem;
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #000;
+    -webkit-text-fill-color: #000;
+    outline: none; }
 
 .container.signup .right {
   float: right;
   width: 50%; }
-
-.container.signup form input {
-  display: block;
-  padding: 0.5rem 1rem;
-  margin: 0 auto;
-  width: 60%;
-  margin-bottom: 1rem;
-  border: 1px solid #aaa;
-  background: #fff;
-  color: #000;
-  -webkit-text-fill-color: #000;
-  outline: none; }
+  .container.signup .right .links {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    text-align: center; }
 
 body {
   font-family: "Josefin Sans";

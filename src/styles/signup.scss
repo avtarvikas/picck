@@ -7,22 +7,35 @@
         width: 50%;
         p {
             text-align: center;
+            a {
+                color: #000;
+                font-weight: 700;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        form input {
+            display: block;
+            padding: 0.5rem 1rem;
+            margin: 0 auto;
+            width: 60%;
+            margin-bottom: 1rem;
+            border: 1px solid #aaa;
+            background: #fff;
+            color: #000;
+            -webkit-text-fill-color: #000;
+            outline: none;
         }
     }
     .right {
         float: right;
         width: 50%;
-    }
-    form input {
-        display: block;
-        padding: 0.5rem 1rem;
-        margin: 0 auto;
-        width: 60%;
-        margin-bottom: 1rem;
-        border: 1px solid #aaa;
-        background: #fff;
-        color: #000;
-        -webkit-text-fill-color: #000;
-        outline: none;
-    }
+        .links {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #aaa;
+            text-align: center;
+        }
+    }    
 }
