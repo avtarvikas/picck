@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import HomePage from './modules/Users/containers/HomePage';
 import Login from './modules/Users/containers/login';
+import Signup from './modules/Users/containers/Signup';
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
 import './css/index.css';
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/login/:id" component={Login} />
+        <Route exact path="/signup" component={Signup} />
       </DeviceUtil>
     </Router>
   </Provider>,
