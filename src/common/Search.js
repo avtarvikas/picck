@@ -9,13 +9,13 @@ class Search extends Component {
   render() {
     const { searchBarFixed, activeTab, onActiveSearchTabChange } = this.props;
     let left;
-    if( activeTab == 'jobs' ){
+    if( activeTab === 'jobs' ){
       left = '11%';
-    } else if( activeTab == 'company' ){
+    } else if( activeTab === 'company' ){
       left = '36%';
-    } else if( activeTab == 'community' ){
+    } else if( activeTab === 'community' ){
       left = '61%';
-    } else if ( activeTab == 'topics'){
+    } else if ( activeTab === 'topics'){
       left = '86%';
     }
     return (

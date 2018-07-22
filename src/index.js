@@ -6,7 +6,6 @@ import HomePage from './modules/Users/containers/HomePage';
 import Login from './modules/Users/containers/login';
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware, compose } from "redux";
-// import "./content/style.css";
 import './css/index.css';
 import logger from 'redux-logger'
 import ReduxPromise from "redux-promise";
@@ -23,7 +22,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <Router forceRefresh={true}>
       <DeviceUtil>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />

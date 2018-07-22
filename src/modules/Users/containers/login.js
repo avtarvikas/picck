@@ -15,18 +15,18 @@ import marketing from "../../../assets/png/marketing.png";
 
 class Login extends Component {
   componentDidMount(){
-    console.log('==========================')
+    console.log('===================================')
   }
   render() {
     const { id } = this.props.match.params;
     let imagesrc = user;
-    if (id == 'm'){
+    if (id === 'm'){
       imagesrc = marketing
-    } else if (id == 'r'){
+    } else if (id === 'r'){
       imagesrc = recruiter
-    } else if (id == 'p'){
+    } else if (id === 'p'){
       imagesrc = user
-    } else if (id == 'c'){
+    } else if (id === 'c'){
       imagesrc = company
     }
     return (
@@ -37,9 +37,9 @@ class Login extends Component {
             <form className="form-group">
               <img src={imagesrc} alt='login-user'/>
               <div className="login-with">Login With</div>
-              {/* <input type="text" name="username" placeholder="Username" />
+              <input type="text" name="username" placeholder="Username" />
               <input type="password" name="password" placeholder="Password" />
-              <button type="submit" className="btn-primary">Login</button> */}
+              <button type="submit" className="btn-primary">Login</button>
             </form>
             <div className="icons">
               <div className='row'>

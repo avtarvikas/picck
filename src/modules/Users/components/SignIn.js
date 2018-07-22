@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { withRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { withRouter } from 'react-router';
 import { logger } from "../../constants";
 
 class SignIn extends Component {

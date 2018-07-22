@@ -25,13 +25,13 @@ class HomePage extends Component {
     console.log(this.state,'STATE')
     const { activeSearchTab } = this.state;
     let active = null;
-    if(activeSearchTab == 'jobs') {
+    if(activeSearchTab === 'jobs') {
       active = <JobOpening />
-    } else if(activeSearchTab == 'company') {
+    } else if(activeSearchTab === 'company') {
       active = <LatestCompanies />
-    } else if(activeSearchTab == 'community') {
+    } else if(activeSearchTab === 'community') {
       active = <CommunityUpdates />
-    } else if(activeSearchTab == 'topics') {
+    } else if(activeSearchTab === 'topics') {
       active = <Topic />
     }
     return (

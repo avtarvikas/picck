@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import Button from "./form/button";
+import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router'
 
 class Header extends Component {
   render() {
     return (
       <div className="header">
         <nav className="navbar navbar-expand-lg navbar-light">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
           {/* <img src={logo} width={90}/> */}
             <div className="brand-name">
               <span className="text-blue">P</span>
@@ -14,7 +16,7 @@ class Header extends Component {
               <span className="text-green">cc</span>
               <span className="text-red">k</span>
             </div>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -68,4 +70,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
