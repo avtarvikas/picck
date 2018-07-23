@@ -47,9 +47,34 @@ class Signup extends Component {
             </div>
             <div className="col-6 right">
               <div>
-                <div className="links">
-                  <Link to="/" >
+                <div className="links google">
+                  <Link to="/login/p" >
+                    <p>Sign up with Google</p>
+                  </Link>
+                </div>
+                <div className="links facebook">
+                  <Link to="/login/p" >
                     <p>Sign up with Facebook</p>
+                  </Link>
+                </div>
+                <div className="links linkedin">
+                  <Link to="/login/p" >
+                    <p>Sign up with LinkedIn</p>
+                  </Link>
+                </div>
+                <div className="links yahoo">
+                  <Link to="/login/p" >
+                    <p>Sign up with Yahoo</p>
+                  </Link>
+                </div>
+                <div className="links twitter">
+                  <Link to="/login/p" >
+                    <p>Sign up with Twitter</p>
+                  </Link>
+                </div>
+                <div className="links insta">
+                  <Link to="/login/p" >
+                    <p>Sign up with Instagram</p>
                   </Link>
                 </div>
               </div>
