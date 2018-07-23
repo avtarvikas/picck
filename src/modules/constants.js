@@ -10,10 +10,10 @@ import decision from "../assets/png/icon5.png";
 import offer from "../assets/png/icon6.png";
 
 export const logger = [
-  { role: "Professional", logo: user, link: '/login/p' },
-  { role: "Company", logo: company, link: '/login/c' },
-  { role: "Recruiter", logo: recruiter, link: '/login/r' },
-  { role: "Marketing", logo: marketing, link: '/login/m' }
+  { role: "Professional", logo: user, link: '/signup/p' },
+  { role: "Company", logo: company, link: '/signup/c' },
+  { role: "Recruiter", logo: recruiter, link: '/signup/r' },
+  { role: "Marketing", logo: marketing, link: '/signup/m' }
 ];
 
 export const hiringProcess = [

@@ -4,7 +4,15 @@
     }
     .left {
         float: left;
-        width: 50%;
+        text-align: center;
+        border-right: 1px solid #aaa;
+        img {
+            margin-bottom: 3em;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: grey;        
+        }
         p {
             text-align: center;
             a {
@@ -30,7 +38,6 @@
     }
     .right {
         float: right;
-        width: 50%;
         .links {
             width: 50%;
             margin: 0 auto;

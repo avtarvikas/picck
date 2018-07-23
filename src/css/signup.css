@@ -3,7 +3,14 @@
 
 .container.signup .left {
   float: left;
-  width: 50%; }
+  text-align: center;
+  border-right: 1px solid #aaa; }
+  .container.signup .left img {
+    margin-bottom: 3em;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: grey; }
   .container.signup .left p {
     text-align: center; }
     .container.signup .left p a {
@@ -24,8 +31,7 @@
     outline: none; }
 
 .container.signup .right {
-  float: right;
-  width: 50%; }
+  float: right; }
   .container.signup .right .links {
     width: 50%;
     margin: 0 auto;
