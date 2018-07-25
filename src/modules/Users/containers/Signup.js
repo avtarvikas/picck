@@ -39,7 +39,7 @@ class Signup extends Component {
                 <input type="submit" value="Go"/>
                 <p>
                   Already a member? <Link
-                  to="/login/" params={id}>
+                  to={`/login/${id}`}>
                   <span>Log in</span>
                   </Link>
                 </p>             
