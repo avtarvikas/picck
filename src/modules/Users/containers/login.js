@@ -32,56 +32,52 @@ class Login extends Component {
     return (
       <div>
       <Header />
-        <div className="container login">
-          <div className="outer">
-            <form className="form-group">
+      <div className="container login">
+          <h1>Login</h1>
+          <div className="row">
+          </div>
+            <div className="col-6 left">
               <img src={imagesrc} alt='login-user'/>
-              <div className="login-with">Login With</div>
-              <input type="text" name="username" placeholder="Username" />
-              <input type="password" name="password" placeholder="Password" />
-              <button type="submit" className="btn-primary">Login</button>
-            </form>
-            <div className="icons">
-              <div className='row'>
-                <Link
-                  to="/"
-                  className="col-md-2"
-                >
-                  <img src={google} alt='google' />
-                </Link>
-                <Link
-                  to="/"
-                  className="col-md-2"
-                >
-                  <img src={fblogo} alt='facebook' />
-                </Link>
-                <Link
-                  to="/"
-                  className="col-md-2"
-                >
-                  <img src={linkedin} alt='linkedin' />
-                </Link>
-                <Link
-                  to="/"
-                  className="col-md-2"
-                >
-                  <img src={yahoo} alt='yahoo' />
-                </Link>
-                <Link
-                  to="/"
-                  className="col-md-2"
-                >
-                  <img src={twitter} alt='twitter' />
-                </Link>
-                <Link
-                  to="/"
-                  className="col-md-2"
-                >
-                  <img src={instagram} alt='instagram' />
-                </Link>
+              <form>
+                <input type="email" placeholder="Email"/>
+                <input type="password" placeholder="Password"/>                
+                <input type="submit" value="Go"/>           
+              </form>
+            </div>
+            <div className="col-6 right">
+              <div>
+                <div className="links google">
+                  <Link to="/login/p" >
+                    <p>Login with Google</p>
+                  </Link>
+                </div>
+                <div className="links facebook">
+                  <Link to="/login/p" >
+                    <p>Login with Facebook</p>
+                  </Link>
+                </div>
+                <div className="links linkedin">
+                  <Link to="/login/p" >
+                    <p>Login with LinkedIn</p>
+                  </Link>
+                </div>
+                <div className="links yahoo">
+                  <Link to="/login/p" >
+                    <p>Login with Yahoo</p>
+                  </Link>
+                </div>
+                <div className="links twitter">
+                  <Link to="/login/p" >
+                    <p>Login with Twitter</p>
+                  </Link>
+                </div>
+                <div className="links insta">
+                  <Link to="/login/p" >
+                    <p>Login with Instagram</p>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     );

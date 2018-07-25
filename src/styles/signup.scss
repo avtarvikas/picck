@@ -1,10 +1,18 @@
 .container.signup {
     h1{
         text-align: center;
+        font-size: 350%;
     }
     .left {
         float: left;
-        width: 50%;
+        text-align: center;        
+        img {
+            margin-bottom: 3em;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: grey;        
+        }
         p {
             text-align: center;
             a {
@@ -30,12 +38,41 @@
     }
     .right {
         float: right;
-        width: 50%;
+        border-left: 1px solid #aaa;
         .links {
             width: 50%;
             margin: 0 auto;
             border: 1px solid #aaa;
             text-align: center;
+            margin-bottom: 1.5rem;
+            a p {
+                margin: 16px 0;
+                color: #fff;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .links:hover {
+            opacity: 0.8;
+        }
+        .google {
+            background: #dd4b39;
+        }
+        .facebook {
+            background: #3b5998;;
+        }
+        .linkedin {
+            background: #007bb6;
+        }
+        .yahoo {
+            background: #7B0099;
+        }
+        .twitter {
+            background: #00aced;
+        }
+        .insta {
+            background: #bc2a8d;
         }
     }    
 }
