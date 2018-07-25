@@ -4,8 +4,7 @@
 
 .container.signup .left {
   float: left;
-  text-align: center;
-  border-right: 1px solid #aaa; }
+  text-align: center; }
   .container.signup .left img {
     margin-bottom: 3em;
     height: 150px;
@@ -32,7 +31,8 @@
     outline: none; }
 
 .container.signup .right {
-  float: right; }
+  float: right;
+  border-left: 1px solid #aaa; }
   .container.signup .right .links {
     width: 50%;
     margin: 0 auto;
