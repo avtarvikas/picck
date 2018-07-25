@@ -24,7 +24,7 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <Router forceRefresh={true}>
       <DeviceUtil>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={Login} />
